@@ -315,3 +315,11 @@ section.ws-grid{padding-bottom:26px}
 .rev-stars{color:#FFCC01;font-size:17px;letter-spacing:3px}
 .rev-card p{font-size:15.5px;margin-top:10px}
 .rev-card .rev-name{font-weight:800;margin-top:12px}
+
+/* D5 connector: a Z hub links the four service cards (desktop only) */
+.ws-grid-wrap{position:relative}
+.ws-spoke-h{position:absolute;left:29%;right:29%;top:50%;height:3px;margin-top:-2px;background:#FFCC01;z-index:1;pointer-events:none}
+.ws-spoke-v{position:absolute;top:13%;bottom:13%;left:50%;width:3px;margin-left:-2px;background:#FFCC01;z-index:1;pointer-events:none}
+.ws-hub{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px 0 0 -23px;background:#242428;z-index:2;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.ws-hub svg{width:24px;height:30px;display:block}
+@media(max-width:700px){.ws-spoke-h,.ws-spoke-v,.ws-hub{display:none}}
